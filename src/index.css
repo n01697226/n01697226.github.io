@@ -6,9 +6,10 @@
   --text-color: #222;
   --background-color: #f7f9f2;
 
-  --h1-font-size: 7rem;
+  --h1-font-size: 6.4rem;
   --h2-font-size: 2.25rem;
   --h3-font-size: 1.25rem;
+  --icon-font-size: 2.25rem;
   --normal-font-size: 1.5rem;
   --small-font-size: 1rem;
 
@@ -57,7 +58,13 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-size: var(--h1-font-size);
+}
+
 /* Container */
 .container {
+  width: 95%;
+  margin: 0 auto;
   border: 2px solid green;
 }

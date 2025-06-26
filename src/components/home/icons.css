@@ -1,0 +1,73 @@
+.icons {
+  border: 2px solid magenta;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.icons i {
+  font-size: var(--icon-font-size);
+  position: absolute;
+}
+
+.icons i:nth-of-type(1) {
+  top: 8%;
+  left: 5%;
+  color: #d45c86;
+}
+
+.icons i:nth-of-type(2) {
+  top: 2%;
+  left: 85%;
+  color: #006480;
+}
+
+.icons i:nth-of-type(3) {
+  top: 30%;
+  left: 60%;
+  color: #ff6347;
+}
+
+.icons i:nth-of-type(4) {
+  top: 55%;
+  left: 95%;
+  color: #026b02;
+}
+
+.icons i:nth-of-type(5) {
+  top: 65%;
+  left: 70%;
+  color: #ff4500;
+}
+
+.icons i:nth-of-type(6) {
+  top: 75%;
+  left: 20%;
+  color: #e7ba97;
+}
+
+.icons i:nth-of-type(7) {
+  top: 20%;
+  left: 30%;
+  color: #171515;
+}
+
+.icons i:nth-of-type(8) {
+  top: 40%;
+  left: 10%;
+  color: #dc143c;
+}
+
+.icons i:nth-of-type(9) {
+  top: 85%;
+  left: 85%;
+  color: #c17575;
+}
+
+.icons i:nth-of-type(10) {
+  top: 90%;
+  left: 45%;
+  color: #4682b4;
+}

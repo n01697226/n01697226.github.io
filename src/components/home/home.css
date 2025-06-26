@@ -1,0 +1,24 @@
+.home-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro {
+  text-align: center;
+}
+
+.intro p {
+  margin: 25px 0;
+  line-height: 2.25;
+}
+
+.intro-links {
+  font-weight: var(--font-semibold);
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
