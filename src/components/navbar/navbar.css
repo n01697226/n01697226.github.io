@@ -1,0 +1,25 @@
+.navbar {
+  width: 400px;
+  margin: 50px auto 0;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 5px;
+  background-color: #e9e4ff;
+}
+
+.nav-list {
+  display: flex;
+  gap: 5px;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 4px 20px;
+  font-weight: var(--font-semibold);
+  border-radius: 5px;
+}
+
+.nav-link.active {
+  background-color: #d0c5ff;
+}
