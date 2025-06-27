@@ -45,8 +45,6 @@ body {
   margin: 0 auto;
   line-height: 1.75;
   background-color: var(--background-color);
-
-  border: 2px solid red;
 }
 
 ul {
@@ -59,6 +57,7 @@ a {
 }
 
 img {
+  width: 100%;
   display: block;
   object-fit: cover;
 }
@@ -82,5 +81,4 @@ h3 {
 .container {
   width: 95%;
   margin: 0 auto;
-  border: 2px solid green;
 }

@@ -1,0 +1,24 @@
+.projects-container {
+  margin-top: 50px;
+}
+
+.projects-container h2,
+.projects-container p {
+  text-align: center;
+}
+
+.projects-container p {
+  margin: 25px 0;
+}
+
+.projects-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.projects-grid img {
+  border-radius: 5px;
+  box-shadow: 0 0 5px #ddd;
+}
