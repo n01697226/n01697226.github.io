@@ -22,3 +22,9 @@
   border-radius: 5px;
   box-shadow: 0 0 5px #ddd;
 }
+
+@media (max-width: 725px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

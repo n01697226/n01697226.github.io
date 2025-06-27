@@ -29,3 +29,9 @@
 .semester li {
   margin: 10px 0;
 }
+
+@media (max-width: 725px) {
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+}

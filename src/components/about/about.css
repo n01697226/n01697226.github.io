@@ -24,3 +24,15 @@
   width: 675px;
   height: 350px;
 }
+
+@media (max-width: 725px) {
+  .bio {
+    flex-direction: column;
+  }
+
+  .bio img {
+    align-self: center;
+    width: 325px;
+    height: auto;
+  }
+}

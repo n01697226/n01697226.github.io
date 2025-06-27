@@ -36,3 +36,9 @@
   font-weight: var(--font-semibold);
   margin-right: 5px;
 }
+
+@media (max-width: 725px) {
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+}

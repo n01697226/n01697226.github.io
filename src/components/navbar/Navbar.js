@@ -28,19 +28,19 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li className="nav-item">
-          <a href="mailto:n01697226@humber.ca" className="nav-link">
-            Contact
-          </a>
-        </li>
-        <li className="nav-item">
           <NavLink
-            to="/resume"
+            to="/writings"
             className={({ isActive }) =>
               isActive ? "nav-link active" : "nav-link"
             }
           >
-            Resume
+            Writings
           </NavLink>
+        </li>
+        <li className="nav-item">
+          <a href="mailto:n01697226@humber.ca" className="nav-link">
+            Contact
+          </a>
         </li>
       </ul>
     </nav>

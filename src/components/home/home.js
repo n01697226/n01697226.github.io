@@ -16,8 +16,8 @@ const Home = () => {
       </div>
 
       <div className="intro-links">
-        <a href="https://github.com/birmansahil">GitHub</a> /
-        <a href="#">LinkedIn</a> /<a href="#">Projects</a>
+        <a href="https://github.com/n01697226">GitHub</a> /
+        <a href="https://www.linkedin.com/in/birmansahil/">LinkedIn</a>
       </div>
 
       <Icons />

@@ -7,6 +7,7 @@ import Projects from "./components/projects/Projects.js";
 import About from "./components/about/about.js";
 import Experience from "./components/experience/Experience.js";
 import Education from "./components/education/Education.js";
+import Writings from "./components/writings/Writings.js";
 import Footer from "./components/footer/Footer.js";
 
 const App = () => {
@@ -33,6 +34,8 @@ const App = () => {
             </>
           }
         />
+
+        <Route path="/writings" element={<Writings />} />
       </Routes>
       <Footer />
     </Router>
