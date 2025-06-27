@@ -1,17 +1,17 @@
-.education-container {
+.experience-container {
   margin-top: 50px;
 }
 
-.education-container h2,
-.education-container p {
+.experience-container h2,
+.experience-container p {
   text-align: center;
 }
 
-.education-container p {
+.experience-container p {
   margin: 25px 0;
 }
 
-.courses-grid {
+.experience-grid {
   margin-top: 50px;
   padding: 50px;
   display: grid;
@@ -22,10 +22,17 @@
   background-color: #f2eee8;
 }
 
-.semester h3 {
+.experience h3,
+.experience h4 {
   margin-bottom: 15px;
 }
 
-.semester li {
+.experience li {
   margin: 10px 0;
+}
+
+.experience li::before {
+  content: "*";
+  font-weight: var(--font-semibold);
+  margin-right: 5px;
 }

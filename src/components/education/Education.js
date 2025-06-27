@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./education.css";
 
 const Education = () => {
+  const [education, setEducation] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:8000/getEducation")
+      .then((res) => res.json())
+      .then((data) => setEducation(data))
+      .catch((err) => console.error(err));
+  }, []);
+
+  if (!education) return <p>Loading...</p>;
+
   return (
     <section className="container education-container">
       <h2>A Deep Dive into My Humber Journey</h2>
@@ -12,53 +23,16 @@ const Education = () => {
       </p>
 
       <div className="courses-grid">
-        <div className="semester">
-          <h3>Semester 01</h3>
-          <ul>
-            <li>Database Concepts and Design</li>
-            <li>Fundamentals of Numeric Computing</li>
-            <li>Algorithms and Problem Solving</li>
-            <li>Operating Systems</li>
-            <li>Web Programming and Design</li>
-            <li>Technical Reading and Writing Skills</li>
-          </ul>
-        </div>
-
-        <div className="semester">
-          <h3>Semester 02</h3>
-          <ul>
-            <li>Database Programming</li>
-            <li>Statistical Data Analysis</li>
-            <li>Object-Oriented Programming</li>
-            <li>Advanced Front-End Programming</li>
-            <li>Technical Workplace Writing Skills</li>
-            <li>An Introduction to Arts and Sciences</li>
-          </ul>
-        </div>
-
-        <div className="semester">
-          <h3>Semester 03</h3>
-          <ul>
-            <li>Systems Design</li>
-            <li>Data Structures and Algorithms</li>
-            <li>Modern Web Technologies</li>
-            <li>Cross-Platform Mobile Application Development</li>
-            <li>High-Level Programming Languages</li>
-            <li>The World Religion</li>
-          </ul>
-        </div>
-
-        <div className="semester">
-          <h3>Semester 04</h3>
-          <ul>
-            <li>Application Testing</li>
-            <li>Principles of Project Management</li>
-            <li>Network Programming</li>
-            <li>Advanced Database Programming</li>
-            <li>Web Application Development</li>
-            <li>Intro to Psychology</li>
-          </ul>
-        </div>
+        {education.map((sem, index) => (
+          <div key={index} className="semester">
+            <h3>{sem.semester}</h3>
+            <ul>
+              {sem.courses.map((course, idx) => (
+                <li key={idx}>{course}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
     </section>
   );
