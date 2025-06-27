@@ -1,0 +1,26 @@
+.about-container {
+  margin-top: 125px;
+}
+
+.about-title {
+  margin-bottom: 50px;
+  display: block;
+  text-align: center;
+  color: var(--primary-color);
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-bold);
+}
+
+.bio {
+  display: flex;
+  gap: 50px;
+}
+
+.content p:first-of-type {
+  margin: 25px 0;
+}
+
+.bio img {
+  width: 675px;
+  height: 350px;
+}

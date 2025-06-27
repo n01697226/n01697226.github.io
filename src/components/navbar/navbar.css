@@ -9,7 +9,8 @@
   display: flex;
   justify-content: space-around;
   border-radius: 5px;
-  background-color: #e9e4ff;
+  background-color: var(--tertiary-color);
+  z-index: 1;
 }
 
 .nav-list {
@@ -25,5 +26,5 @@
 }
 
 .nav-link.active {
-  background-color: #d0c5ff;
+  background-color: var(--secondary-color);
 }

@@ -1,15 +1,15 @@
 /* Theme */
 :root {
-  --primary-color: #91c8e4;
-  --secondary-color: #749bc2;
-  --tertiary-color: #4682a9;
+  --primary-color: #016255;
+  --secondary-color: #95b3ac;
+  --tertiary-color: #b3c6c1;
   --text-color: #222;
-  --background-color: #f7f9f2;
+  --background-color: #efebe4;
 
   --h1-font-size: 6.4rem;
-  --h2-font-size: 2.25rem;
-  --h3-font-size: 1.25rem;
-  --icon-font-size: 2.25rem;
+  --h2-font-size: 3.75rem;
+  --h3-font-size: 2.25rem;
+  --icon-font-size: 2.5rem;
   --normal-font-size: 1.5rem;
   --small-font-size: 1rem;
 
@@ -58,8 +58,24 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+  object-fit: cover;
+}
+
 h1 {
+  color: var(--primary-color);
   font-size: var(--h1-font-size);
+}
+
+h2 {
+  color: var(--primary-color);
+  font-size: var(--h2-font-size);
+}
+
+h3 {
+  color: var(--primary-color);
+  font-size: var(--h3-font-size);
 }
 
 /* Container */

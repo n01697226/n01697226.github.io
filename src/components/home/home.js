@@ -1,5 +1,5 @@
 import React from "react";
-import Icons from "./Icons.js";
+import Icons from "../icons/Icons.js";
 import "./home.css";
 
 const Home = () => {
@@ -16,8 +16,8 @@ const Home = () => {
       </div>
 
       <div className="intro-links">
-        <a href="#">GitHub</a> /<a href="#">LinkedIn</a> /
-        <a href="#">Projects</a>
+        <a href="https://github.com/birmansahil">GitHub</a> /
+        <a href="#">LinkedIn</a> /<a href="#">Projects</a>
       </div>
 
       <Icons />

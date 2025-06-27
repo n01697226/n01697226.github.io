@@ -16,7 +16,7 @@ const Navbar = () => {
           </a>
         </li>
         <li className="nav-item">
-          <a href="#" className="nav-link">
+          <a href="mailto:n01697226@humber.ca" className="nav-link">
             Contact
           </a>
         </li>
